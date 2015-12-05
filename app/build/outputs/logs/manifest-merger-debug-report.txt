@@ -1,0 +1,175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:2:1-90:12
+	package
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:5:5-30
+	android:versionCode
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:20.0.0] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:16:5-42
+	android:targetSdkVersion
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
+meta-data#com.parse.push.notification_icon
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:11:5-13:52
+	android:resource
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:13:9-49
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:12:9-56
+uses-permission#android.permission.INTERNET
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:15:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:16:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:18:5-66
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:18:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:19:22-65
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:20:5-71
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:20:22-68
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:21:22-79
+permission#com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:29:9-84
+uses-permission#com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:32:5-100
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:32:22-97
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:33:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:34:5-75
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:34:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:35:5-80
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:35:22-77
+application
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:37:5-88:19
+MERGED from [com.android.support:support-v4:20.0.0] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:17:5-19
+	android:label
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:41:9-41
+	android:allowBackup
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:39:9-35
+	android:icon
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:40:9-43
+	android:theme
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:42:9-40
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:38:9-36
+activity#com.parse.tutorials.pushnotifications.MainActivity
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:43:9-47:20
+	android:label
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:45:13-45
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:44:13-41
+service#com.parse.PushService
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:49:9-57
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:49:18-54
+receiver#com.parse.ParseBroadcastReceiver
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:51:9-56:20
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:51:19-66
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:52:13-55:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:53:17-79
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:53:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:54:17-77
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:54:25-74
+receiver#com.parse.tutorials.pushnotifications.MyReceiver
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:57:9-65:20
+	android:exported
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:59:13-37
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:58:13-39
+intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:60:13-64:29
+action#com.parse.push.intent.RECEIVE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:61:17-72
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:61:25-69
+action#com.parse.push.intent.DELETE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:62:17-71
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:62:25-68
+action#com.parse.push.intent.OPEN
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:63:17-69
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:63:25-66
+receiver#com.parse.GcmBroadcastReceiver
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:66:9-76:20
+	android:permission
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:68:13-73
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:67:13-58
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.parse.tutorials.pushnotifications
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:69:13-75:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:70:17-81
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:70:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:71:17-86
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:71:25-83
+category#com.parse.tutorials.pushnotifications
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:74:17-82
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:74:27-79
+activity#com.parse.tutorials.pushnotifications.CardListActivity
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:78:9-87:20
+	android:label
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:80:13-56
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:79:13-45
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:82:13-86:29
+action#android.intent.action.MAIN
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:83:17-69
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:83:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:85:27-74
