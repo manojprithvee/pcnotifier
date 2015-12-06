@@ -1,19 +1,22 @@
 package com.parse.tutorials.pushnotifications;
 
+import android.annotation.TargetApi;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.util.Log;
+
 import com.parse.ParsePushBroadcastReceiver;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.OutputStream;
 
 public class MyReceiver extends ParsePushBroadcastReceiver {
@@ -22,6 +25,7 @@ public class MyReceiver extends ParsePushBroadcastReceiver {
     private String title;
     private OutputStream outputStream;
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onPushReceive(Context context, Intent intent) {
         super.onPushReceive(context, intent);
@@ -82,15 +86,22 @@ public class MyReceiver extends ParsePushBroadcastReceiver {
                 .setContentTitle(title)
                 .setContentIntent(pendingIntent)
                 .setGroup("pcnotifer")
+                .setVibrate(new long[]{100, 200, 300, 400, 500})
+                .setLights(Color.RED, 3000, 3000)
                 .setSound(Uri.parse("android.resource://com.parse.tutorials.pushnotifications/" + R.raw.sound));
 
         Notification notification = builder.build();
 
         NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-
+        notification.flags = (Notification.FLAG_ONGOING_EVENT | Notification.FLAG_NO_CLEAR);
+        if (Build.VERSION.SDK_INT >= 21)
+            notification.visibility = Notification.VISIBILITY_PUBLIC;
         nm.notify(1, notification);
         Log.i("notif", String.valueOf(id));
-        CardListActivity.cardArrayAdapter.repopulate();
+        try {
+            CardListActivity.cardArrayAdapter.repopulate();
+        } catch (Exception e) {
+        }
         id++;
 
 

@@ -4,16 +4,17 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
 	android:layout_width="match_parent"
+	android:id="@+id/llayout"
+	android:paddingTop="40dp"
 	android:layout_height="wrap_content"
-	android:background="#e2e4fe">
+	>
 
 	<ListView
 		android:id="@+id/card_listView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:listSelector="@android:color/transparent"
-		android:cacheColorHint="@android:color/transparent"
 		android:divider="@null"
-		android:dividerHeight="10dp" />
+		android:background="#ff2094bd"
+		android:dividerHeight="5dp"/>
 </LinearLayout>
 <!-- From: file:/home/manoj/programming/parse/app/src/main/res/layout/listview.xml -->

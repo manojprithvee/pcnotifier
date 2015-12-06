@@ -2,17 +2,17 @@
 
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
+	android:id="@+id/llayout"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
-	android:background="#e2e4fe">
+	android:orientation="vertical"
+	android:paddingTop="40dp">
 
 	<ListView
 		android:id="@+id/card_listView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:listSelector="@android:color/transparent"
-		android:cacheColorHint="@android:color/transparent"
+		android:background="#ff2094bd"
 		android:divider="@null"
-		android:dividerHeight="10dp" />
+		android:dividerHeight="5dp" />
 </LinearLayout>

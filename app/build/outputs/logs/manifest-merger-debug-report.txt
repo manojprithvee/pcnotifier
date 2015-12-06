@@ -15,7 +15,8 @@ ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:2:1-90
 		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:20.0.0] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:16:5-42
+MERGED from [com.android.support:support-v4:23.1.1] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.1.1] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml
@@ -82,7 +83,8 @@ ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:35:5-8
 		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:35:22-77
 application
 ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:37:5-88:19
-MERGED from [com.android.support:support-v4:20.0.0] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:17:5-19
+MERGED from [com.android.support:support-v4:23.1.1] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.1.1] /home/manoj/programming/parse/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /home/manoj/programming/parse/app/src/main/AndroidManifest.xml:41:9-41
 	android:allowBackup
