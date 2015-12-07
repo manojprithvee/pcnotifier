@@ -2,19 +2,18 @@
 
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
-	android:layout_width="match_parent"
 	android:id="@+id/llayout"
-	android:paddingTop="40dp"
+	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
-	>
+	android:orientation="vertical"
+	android:paddingTop="40dp">
 
 	<ListView
 		android:id="@+id/card_listView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:divider="@null"
 		android:background="#ff2094bd"
-		android:dividerHeight="5dp"/>
+		android:divider="@null"
+		android:dividerHeight="5dp" />
 </LinearLayout>
 <!-- From: file:/home/manoj/programming/parse/app/src/main/res/layout/listview.xml -->

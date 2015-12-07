@@ -24,6 +24,7 @@ public class MyReceiver extends ParsePushBroadcastReceiver {
     private String message;
     private String title;
     private OutputStream outputStream;
+    private String app;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -67,6 +68,7 @@ public class MyReceiver extends ParsePushBroadcastReceiver {
             obj = new JSONObject(jsonData);
             message=obj.getString("alert");
             title=obj.getString("title");
+            app=obj.getString("flag");
             outputStream = context.openFileOutput("title.data", Context.MODE_APPEND);
             outputStream.write((title+"\n").getBytes());
             outputStream.close();
@@ -89,7 +91,9 @@ public class MyReceiver extends ParsePushBroadcastReceiver {
                 .setVibrate(new long[]{100, 200, 300, 400, 500})
                 .setLights(Color.RED, 3000, 3000)
                 .setSound(Uri.parse("android.resource://com.parse.tutorials.pushnotifications/" + R.raw.sound));
-
+        if (app.equals("watchseries")){
+            builder.setSound(Uri.parse("android.resource://com.parse.tutorials.pushnotifications/" + R.raw.watch));
+        }
         Notification notification = builder.build();
 
         NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

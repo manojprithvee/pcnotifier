@@ -38,6 +38,7 @@ int layout listview 0x7f040003
 int menu main 0x7f0a0000
 int mipmap ic_launcher 0x7f030000
 int raw sound 0x7f050000
+int raw watch 0x7f050001
 int string action_settings 0x7f090000
 int string age_text_view 0x7f090001
 int string alert_dialog_failed 0x7f090002
