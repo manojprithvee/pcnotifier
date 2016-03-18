@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
@@ -79,9 +80,9 @@ public class MyReceiver extends ParsePushBroadcastReceiver {
             e.printStackTrace();
         }
         // Add custom intent
-        Intent cIntent = new Intent(context, MainActivity.class);
+        PackageManager manager = context.getPackageManager();
+        Intent cIntent = manager.getLaunchIntentForPackage("com.estrongs.android.pop");
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, cIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
         // Create custom notification
         Notification.Builder  builder = new Notification.Builder(context)
                 .setContentText(message)

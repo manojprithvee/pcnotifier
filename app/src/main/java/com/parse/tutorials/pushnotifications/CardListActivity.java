@@ -30,47 +30,10 @@ public class CardListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
         final ActionBar ab = getActionBar();
-        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ff2094bd")));
+        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFF9800")));
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        getWindow().setStatusBarColor(Color.parseColor("#ff2094bd"));
+        getWindow().setStatusBarColor(Color.parseColor("#FFC17401"));
         listView = (ListView) findViewById(R.id.card_listView);
-        listView.setOnScrollListener(new OnScrollListener() {
-
-            int mLastFirstVisibleItem = 0;
-
-            @Override
-            public void onScrollStateChanged(AbsListView view, int scrollState) {
-
-            }
-
-            @Override
-            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                if (view.getId() == listView.getId()) {
-                    final int currentFirstVisibleItem = listView.getFirstVisiblePosition();
-
-                    if (currentFirstVisibleItem > mLastFirstVisibleItem) {
-                        // getSherlockActivity().getSupportActionBar().hide();
-                        findViewById(R.id.llayout).setPadding(0, 0, 0, 0);
-                        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#112094bd")));
-                        ab.setDisplayShowTitleEnabled(false);
-                        ab.setDisplayUseLogoEnabled(false);
-                        ab.setDisplayHomeAsUpEnabled(false);
-                        ab.setDisplayShowHomeEnabled(false);
-                    } else if (currentFirstVisibleItem < mLastFirstVisibleItem) {
-                        // getSherlockActivity().getSupportActionBar().show();
-                        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ff2094bd")));
-                        findViewById(R.id.llayout).setPadding(0, 75, 0, 0);
-                        ab.setDisplayShowTitleEnabled(true);
-                        ab.setDisplayUseLogoEnabled(true);
-                        ab.setDisplayHomeAsUpEnabled(true);
-                        ab.setDisplayShowHomeEnabled(true);
-                    }
-
-                    mLastFirstVisibleItem = currentFirstVisibleItem;
-                }
-            }
-        });
-
         listView.addHeaderView(new View(this));
         listView.addFooterView(new View(this));
 
@@ -94,19 +57,24 @@ public class CardListActivity extends Activity {
             Log.i("message",message_raw);
             Log.i("title",title_raw);
             fis.close();
+            List<String> a= Arrays.asList(message_list);
+            Collections.reverse(a);
+            message_list=(String[])a.toArray();
+            a= Arrays.asList(title_list);
+            Collections.reverse(a);
+            title_list=(String[])a.toArray();
         } catch (IOException e) {
-            e.printStackTrace();
+            title_list=new String[]{"There are No Notification Yet"};
+            message_list=new String[]{"Please wait"};
         }
-        List<String> a= Arrays.asList(message_list);
-        Collections.reverse(a);
-        message_list=(String[])a.toArray();
-        a= Arrays.asList(title_list);
-        Collections.reverse(a);
-        title_list=(String[])a.toArray();
-
         for (int i = 0; i < message_list.length; i++) {
-            Card card = new Card(title_list[i], message_list[i]);
-            cardArrayAdapter.add(card);
+            try {
+                Card card = new Card(title_list[i], message_list[i]);
+                cardArrayAdapter.add(card);
+            }
+            catch (Exception ex){
+
+            }
         }
         listView.setAdapter(cardArrayAdapter);
     }

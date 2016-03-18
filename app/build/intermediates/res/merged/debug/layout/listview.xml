@@ -4,14 +4,15 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/llayout"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
+	android:layout_height="match_parent"
+	android:background="#ff2094bd"
 	android:orientation="vertical"
 	android:paddingTop="40dp">
 
 	<ListView
 		android:id="@+id/card_listView"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+		android:layout_height="match_parent"
 		android:background="#ff2094bd"
 		android:divider="@null"
 		android:dividerHeight="5dp" />
